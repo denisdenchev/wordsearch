@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <label for="sentance">Your sentance:</label>
+      <!-- <input type="text" id="sentance" name="sentance" /><br /><br /> -->
+      <textarea rows="2" cols="50" id="sentance" name="sentance"> </textarea>
+      <label for="word">Your Word:</label>
+      <input type="text" id="word" name="word" /><br /><br />
+      <button type="button" onclick="printSentance()">Search</button>
+    </form>
+    <div>
+      <h2>Your Sentance</h2>
+      <h3 id="sentanceOutput"></h3>
+    </div>
+    <div>
+      <h2>Your Word</h2>
+      <h3 id="wordOut"></h3>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
